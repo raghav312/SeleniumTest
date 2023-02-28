@@ -18,7 +18,7 @@ namespace SeleniumTest
         public Actions actions;
         public UnitTest1()
         {
-            driver = new ChromeDriver("D:\\WebDevV2\\chromedriver_win32");
+            driver = new ChromeDriver("Path_to_file");
             driver.Navigate().GoToUrl("https://app.cloudqa.io/home/AutomationPracticeForm");
             firstname = driver.FindElement(By.Id("fname"));
             state = new SelectElement(driver.FindElement(By.Id("state")));
